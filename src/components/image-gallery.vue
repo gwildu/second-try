@@ -1,6 +1,6 @@
 <template>
-  <div v-if="isOpen" class="backdrop" @click="closeHandler">
-    <div class="imageGallery">
+  <div v-if="isOpen" class="backdrop" @click.stop="closeHandler">
+    <div class="imageGallery" @click.stop="">
       <div class="close" @click.stop="closeHandler">
         &cross;
       </div>
